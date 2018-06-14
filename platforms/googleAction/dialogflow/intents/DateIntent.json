@@ -1,0 +1,23 @@
+{
+	"name": "DateIntent",
+	"auto": true,
+	"webhookUsed": true,
+	"responses": [
+		{
+			"parameters": [
+				{
+					"isList": false,
+					"name": "day",
+					"value": "$day",
+					"dataType": "@sys.number-sequence"
+				},
+				{
+					"isList": false,
+					"name": "dayOrdinal",
+					"value": "$dayOrdinal",
+					"dataType": "@LIST_OF_ORDINALS"
+				}
+			]
+		}
+	]
+}

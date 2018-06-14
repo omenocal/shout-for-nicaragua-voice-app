@@ -1,0 +1,668 @@
+{
+  "invocation": "shout nicaragua",
+  "alexa": {
+    "interactionModel": {
+      "languageModel": {
+        "intents": [
+          {
+            "name": "AMAZON.FallbackIntent",
+            "samples": []
+          }
+        ]
+      }
+    }
+  },
+  "dialogflow": {
+    "intents": [
+      {
+        "name": "DefaultFallbackIntent",
+        "auto": true,
+        "contexts": [],
+        "responses": [
+          {
+            "resetContexts": false,
+            "action": "input.unknown",
+            "affectedContexts": [],
+            "parameters": [],
+            "messages": [
+              {
+                "type": 0,
+                "lang": "en",
+                "speech": [
+                  "I didn't get that. Can you say it again?",
+                  "I missed what you said. Say it again?",
+                  "Sorry, could you say that again?",
+                  "Sorry, can you say that again?",
+                  "Can you say that again?",
+                  "Sorry, I didn't get that.",
+                  "Sorry, what was that?",
+                  "One more time?",
+                  "What was that?",
+                  "Say that again?",
+                  "I didn't get that.",
+                  "I missed that."
+                ]
+              },
+              {
+                "type": 0,
+                "lang": "es",
+                "speech": [
+                  "Ups, no he entendido a que te refieres.",
+                  "¿Podrías repetirlo, por favor?",
+                  "¿Disculpa?",
+                  "¿Decías?",
+                  "¿Cómo?"
+                ]
+              }
+            ],
+            "defaultResponsePlatforms": {},
+            "speech": []
+          }
+        ],
+        "priority": 500000,
+        "webhookUsed": true,
+        "webhookForSlotFilling": false,
+        "fallbackIntent": true,
+        "events": []
+      }
+    ]
+  },
+  "intents": [
+    {
+      "name": "LaunchIntent",
+      "phrases": [
+        "a fact",
+        "fact",
+        "give me a fact",
+        "tell me a fact",
+        "what happens",
+        "what's happening",
+        "what's happening today",
+        "what's going on"
+      ],
+      "dialogflow": {
+        "auto": false,
+        "contexts": [],
+        "priority": 500000,
+        "webhookUsed": true,
+        "webhookForSlotFilling": false,
+        "fallbackIntent": false,
+        "events": [
+          {
+            "name": "GOOGLE_ASSISTANT_WELCOME"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReasonIntent",
+      "phrases": [
+        "reason",
+        "a reason",
+        "the reason",
+        "give me a reason",
+        "give me the reason",
+        "tell me why is this happening",
+        "why is this happening"
+      ],
+      "dialogflow": {
+        "id": "e9c36f6d-e36b-4871-ae2e-3b188dfa7353"
+      }
+    },
+    {
+      "name": "DateIntent",
+      "phrases": [
+        "{day}",
+        "day {day}",
+        "day number {day}",
+        "i want to know about day {day}",
+        "i want to know about day number {day}",
+        "tell me about day {day}",
+        "tell me about day number {day}",
+        "day {day} of the protests",
+        "day number {day} of the protests",
+        "i want to know about day {day} of the protests",
+        "i want to know about day number {day} of the protests",
+        "tell me about day {day} of the protests",
+        "tell me about day number {day} of the protests",
+        "{dayOrdinal} day",
+        "i want to know about the {dayOrdinal} day",
+        "tell me about the {dayOrdinal} day",
+        "{dayOrdinal} day of the protests",
+        "i want to know about the {dayOrdinal} day of the protests",
+        "tell me about the {dayOrdinal} day of the protests"
+      ],
+      "inputs": [
+        {
+          "name": "day",
+          "type": {
+            "alexa": "AMAZON.NUMBER",
+            "dialogflow": "@sys.number-sequence"
+          }
+        },
+        {
+          "name": "dayOrdinal",
+          "type": {
+            "alexa": "LIST_OF_ORDINALS",
+            "dialogflow": "@sys.ordinal"
+          }
+        }
+      ],
+      "dialogflow": {
+        "id": "789d2722-491e-4c3f-9b68-070aed62355e"
+      }
+    },
+    {
+      "name": "StartOverIntent",
+      "alexa": {
+        "name": "AMAZON.StartOverIntent"
+      },
+      "phrases": [
+        "begin again",
+        "begin start from beginning",
+        "can you now start over",
+        "can you now start over now",
+        "can you now start over please",
+        "can you please restart",
+        "can you please start over",
+        "can you please start over now",
+        "can you please start over please",
+        "can you start it again",
+        "can you start it over",
+        "can you start over",
+        "can you start over now",
+        "can you start over please",
+        "could you now start over",
+        "could you now start over now",
+        "could you now start over please",
+        "could you please start over",
+        "could you please start over now",
+        "could you please start over please",
+        "could you start over",
+        "could you start over now",
+        "could you start over please",
+        "from the beginning",
+        "get back and start over",
+        "go back to beginning",
+        "go back to the beginning",
+        "go back to the start",
+        "go to the beginning",
+        "no start over",
+        "now start over",
+        "now start over now",
+        "now start over please",
+        "oh no start over",
+        "play it from the beginning",
+        "play this from beginning",
+        "please restart",
+        "please start over",
+        "please start over now",
+        "please start over please",
+        "re restart",
+        "re uh restart",
+        "reset",
+        "restart",
+        "restart from scratch",
+        "restart from beginning",
+        "restart it",
+        "restart restart",
+        "restart this",
+        "rewind to beginning",
+        "shut restart",
+        "sorry hold up start over",
+        "starting over",
+        "starting over start over",
+        "start again",
+        "start all over again",
+        "start at beginning",
+        "start form the beginning",
+        "start from beginning",
+        "start from beginning please",
+        "start from the beginning please",
+        "start it again",
+        "start it all over",
+        "start it from the beginning",
+        "start it over",
+        "start it over from the beginning",
+        "start from scratch",
+        "start from beginning",
+        "start over",
+        "start over again",
+        "start over now",
+        "start over please",
+        "start over start over",
+        "start start over",
+        "start that again",
+        "start that over",
+        "start this over",
+        "the start over",
+        "try again",
+        "will you now start over",
+        "will you now start over now",
+        "will you now start over please",
+        "will you please start over",
+        "will you please start over now",
+        "will you please start over please",
+        "will you start over",
+        "will you start over now",
+        "will you start over please",
+        "would you now start over",
+        "would you now start over now",
+        "would you now start over please",
+        "would you please start over",
+        "would you please start over now",
+        "would you please start over please",
+        "would you start over",
+        "would you start over now",
+        "would you start over please",
+        "yeah restart"
+      ]
+    },
+    {
+      "name": "RepeatIntent",
+      "alexa": {
+        "name": "AMAZON.RepeatIntent"
+      },
+      "phrases": [
+        "read the info back",
+        "read the info back please",
+        "read it back",
+        "read it back please",
+        "repeat",
+        "repeat that",
+        "repeat please",
+        "repeat that please",
+        "give me the info back",
+        "give me the info back please",
+        "get me the info back",
+        "get me the info back please",
+        "read the info again",
+        "read the info again please",
+        "read it again",
+        "read it again please",
+        "give me the info again",
+        "give me the info again please",
+        "get me the info again",
+        "get me the info again please"
+      ]
+    },
+    {
+      "name": "YesIntent",
+      "alexa": {
+        "name": "AMAZON.YesIntent"
+      },
+      "phrases": [
+        "yes please",
+        "yup",
+        "yep",
+        "ready",
+        "sure",
+        "thanks",
+        "yeah",
+        "okay",
+        "absolutely",
+        "sure sounds good",
+        "affirmative",
+        "amen",
+        "find",
+        "good",
+        "yea",
+        "all right",
+        "aye aye",
+        "please",
+        "gladly",
+        "naturally",
+        "of course",
+        "positively",
+        "sure thing",
+        "very well",
+        "roger",
+        "all righty",
+        "check",
+        "cool",
+        "yes way",
+        "yeppers",
+        "yessum",
+        "hells yes",
+        "hell ya",
+        "hell yea",
+        "right on"
+      ]
+    },
+    {
+      "name": "NoIntent",
+      "alexa": {
+        "name": "AMAZON.NoIntent"
+      },
+      "phrases": [
+        "no thank you",
+        "no thanks",
+        "nope",
+        "no way",
+        "never",
+        "negative",
+        "negatron",
+        "nix",
+        "absolutely not",
+        "not by any means",
+        "no means",
+        "not at all",
+        "hell no",
+        "not this time",
+        "not ever",
+        "unfortunately not",
+        "thanks but no thanks",
+        "maybe another time",
+        "nah",
+        "not right now",
+        "not now"
+      ]
+    },
+    {
+      "name": "HelpIntent",
+      "alexa": {
+        "name": "AMAZON.HelpIntent"
+      },
+      "phrases": [
+        "help",
+        "help me",
+        "help please",
+        "please help",
+        "what can i ask you",
+        "what can i ask",
+        "what can i say",
+        "how does this work",
+        "how does it work",
+        "how do you work",
+        "how do i use this",
+        "how do i do this",
+        "how do you do this",
+        "how do you use this",
+        "what do i do",
+        "what do i do next",
+        "how do i navigate",
+        "get help",
+        "what commands can i ask",
+        "what commands can i say",
+        "what can i do",
+        "what can i use this for",
+        "what questions can i ask",
+        "what can you do",
+        "what do you do",
+        "how do i use you",
+        "how can i use you",
+        "what can you tell me",
+        "other options",
+        "options",
+        "how do i ask for a game",
+        "how do i play this",
+        "how can i play this"
+      ],
+      "dialogflow": {
+        "id": "e66f2145-ac51-49ea-a27b-abd115d79e03"
+      }
+    },
+    {
+      "name": "CancelIntent",
+      "alexa": {
+        "name": "AMAZON.CancelIntent"
+      },
+      "phrases": [
+        "cancel",
+        "cancel it"
+      ],
+      "dialogflow": {
+        "auto": false,
+        "contexts": [],
+        "priority": 500000,
+        "webhookUsed": true,
+        "webhookForSlotFilling": false,
+        "fallbackIntent": false,
+        "events": [
+          {
+            "name": "actions_intent_CANCEL"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StopIntent",
+      "alexa": {
+        "name": "AMAZON.StopIntent"
+      },
+      "phrases": [
+        "all done",
+        "complete",
+        "done",
+        "end",
+        "finished",
+        "i am done",
+        "i'm done",
+        "no more",
+        "stop",
+        "the end",
+        "please close",
+        "goodbye",
+        "bye",
+        "bye bye"
+      ],
+      "dialogflow": {
+        "auto": false,
+        "contexts": [],
+        "priority": 500000,
+        "webhookUsed": true,
+        "webhookForSlotFilling": false,
+        "fallbackIntent": false,
+        "events": [
+          {
+            "name": "actions_intent_CANCEL"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NextIntent",
+      "alexa": {
+        "name": "AMAZON.NextIntent"
+      },
+      "phrases": [
+        "change",
+        "change it",
+        "change it please",
+        "change please",
+        "forward",
+        "forward please",
+        "give me next one",
+        "give me the next one",
+        "give me the next thing",
+        "go forward",
+        "go forward please",
+        "go on to the next thing",
+        "go to next one",
+        "go to next thing",
+        "go to the next one",
+        "go to the next thing",
+        "move ahead",
+        "move ahead one",
+        "move forward",
+        "move forward one",
+        "move on",
+        "move past this",
+        "next",
+        "next next",
+        "next next please",
+        "next one",
+        "next one please",
+        "next please",
+        "next thing",
+        "next up",
+        "next up please",
+        "play next",
+        "play next please",
+        "please change",
+        "please change it",
+        "please forward",
+        "please go forward",
+        "please next",
+        "please next next",
+        "please next one",
+        "please next up",
+        "please play next",
+        "please skip",
+        "please skip ahead",
+        "please skip forward",
+        "please skip it",
+        "please skip skip",
+        "please skip that",
+        "please skip that one",
+        "please skip this",
+        "please skip this one",
+        "please where next",
+        "please yes skip",
+        "skip",
+        "skip ahead",
+        "skip ahead please",
+        "skip forward",
+        "skip forward please",
+        "skip it",
+        "skip it please",
+        "skip please",
+        "skip skip",
+        "skip skip please",
+        "skip that",
+        "skip that one",
+        "skip that one please",
+        "skip that please",
+        "skip that thing",
+        "skip this",
+        "skip this one",
+        "skip this one please",
+        "skip this please",
+        "skip this thing",
+        "the next thing",
+        "yes skip ",
+        "yes skip please"
+      ]
+    },
+    {
+      "name": "PreviousIntent",
+      "alexa": {
+        "name": "AMAZON.PreviousIntent"
+      },
+      "phrases": [
+        "back up please",
+        "back up",
+        "back",
+        "go back one fact",
+        "go back one",
+        "go back",
+        "please go back one fact",
+        "please go back one",
+        "previous",
+        "previous fact",
+        "previous one",
+        "previous thing",
+        "previous",
+        "skip back please",
+        "skip back"
+      ]
+    }
+  ],
+  "inputTypes": [
+    {
+      "name": "LIST_OF_ORDINALS",
+      "values": [
+        {
+          "value": "1st"
+        },
+        {
+          "value": "2nd"
+        },
+        {
+          "value": "3rd"
+        },
+        {
+          "value": "4th"
+        },
+        {
+          "value": "5th"
+        },
+        {
+          "value": "6th"
+        },
+        {
+          "value": "7th"
+        },
+        {
+          "value": "8th"
+        },
+        {
+          "value": "9th"
+        },
+        {
+          "value": "10th"
+        },
+        {
+          "value": "11th"
+        },
+        {
+          "value": "12th"
+        },
+        {
+          "value": "13th"
+        },
+        {
+          "value": "14th"
+        },
+        {
+          "value": "15th"
+        },
+        {
+          "value": "16th"
+        },
+        {
+          "value": "17th"
+        },
+        {
+          "value": "18th"
+        },
+        {
+          "value": "19th"
+        },
+        {
+          "value": "20th"
+        },
+        {
+          "value": "21st"
+        },
+        {
+          "value": "22nd"
+        },
+        {
+          "value": "23rd"
+        },
+        {
+          "value": "24th"
+        },
+        {
+          "value": "25th"
+        },
+        {
+          "value": "26th"
+        },
+        {
+          "value": "27th"
+        },
+        {
+          "value": "28th"
+        },
+        {
+          "value": "29th"
+        },
+        {
+          "value": "30th"
+        }
+      ]
+    }
+  ]
+}

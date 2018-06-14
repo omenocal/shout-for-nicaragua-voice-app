@@ -1,0 +1,50 @@
+{
+	"description": "",
+	"language": "en",
+	"disableInteractionLogs": false,
+	"disableStackdriverLogs": true,
+	"googleAssistant": {
+		"googleAssistantCompatible": true,
+		"welcomeIntentSignInRequired": false,
+		"startIntents": [
+			{
+				"intentId": "789d2722-491e-4c3f-9b68-070aed62355e",
+				"signInRequired": false
+			},
+			{
+				"intentId": "e9c36f6d-e36b-4871-ae2e-3b188dfa7353",
+				"signInRequired": false
+			},
+			{
+				"intentId": "e66f2145-ac51-49ea-a27b-abd115d79e03",
+				"signInRequired": false
+			}
+		],
+		"systemIntents": [],
+		"endIntentIds": [],
+		"oAuthLinking": {
+			"required": false,
+			"grantType": "AUTH_CODE_GRANT"
+		},
+		"voiceType": "MALE_1",
+		"capabilities": [],
+		"protocolVersion": "V2",
+		"autoPreviewEnabled": false,
+		"isDeviceAgent": false
+	},
+	"defaultTimezone": "America/Chicago",
+	"webhook": {
+		"url": "https://bdiu5yy51f.execute-api.us-east-1.amazonaws.com/prod/v1/shoutForNicaragua",
+    "headers": {
+      "x-api-key": "eqYnwYvc622JE2bkXJMhL2rmkWXOG1BG6QQI6E5i"
+    },
+		"available": true
+	},
+	"isPrivate": true,
+	"customClassifierMode": "use.after",
+	"mlMinConfidence": 0.3,
+	"supportedLanguages": [
+		"es"
+	],
+	"onePlatformApiVersion": "v2"
+}

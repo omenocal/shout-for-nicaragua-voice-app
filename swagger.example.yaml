@@ -1,0 +1,37 @@
+---
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: Dialogflow - Google Actions Gateway
+  description: Webhook to allow Dialogflow to call an action stored in a lambda function
+paths:
+  /my-voice-app:
+    post:
+      summary: Call lambda function.
+      description: |
+        Call lambda function.
+      security:
+      - api_key: []
+      produces:
+      - "application/json;charset=utf-8"
+      x-amazon-apigateway-integration:
+        type: aws
+        uri: arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:123456789012:function:my-voice-app/invocations
+        credentials: arn:aws:iam::123456789012:role/lambda_gateway_execution
+        httpMethod: POST
+        responses:
+          default:
+            statusCode: "200"
+            responseParameters:
+              method.response.header.Content-Type: "'application/json;charset=utf-8'"
+      responses:
+        200:
+          description: An object with the response
+          headers:
+            Content-Type:
+              type: "string"
+securityDefinitions:
+  api_key:
+    type: "apiKey"
+    name: "x-api-key"
+    in: "header"

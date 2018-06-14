@@ -1,0 +1,566 @@
+[
+	{
+		"data": [
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "día ",
+				"userDefined": false
+			},
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "día número ",
+				"userDefined": false
+			},
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "quiero saber acerca del día ",
+				"userDefined": false
+			},
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "quiero saber acerca del día número ",
+				"userDefined": false
+			},
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "dime acerca del día ",
+				"userDefined": false
+			},
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "dime acerca del día número ",
+				"userDefined": false
+			},
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "cuéntame acerca del día ",
+				"userDefined": false
+			},
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "cuéntame acerca del día número ",
+				"userDefined": false
+			},
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "háblame acerca del día ",
+				"userDefined": false
+			},
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "háblame acerca del día número ",
+				"userDefined": false
+			},
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "día ",
+				"userDefined": false
+			},
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			},
+			{
+				"text": " de las protestas",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "día número ",
+				"userDefined": false
+			},
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			},
+			{
+				"text": " de las protestas",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "quiero saber acerca del día ",
+				"userDefined": false
+			},
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			},
+			{
+				"text": " de las protestas",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "quiero saber acerca del día número ",
+				"userDefined": false
+			},
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			},
+			{
+				"text": " de las protestas",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "dime acerca del día ",
+				"userDefined": false
+			},
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			},
+			{
+				"text": " de las protestas",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "dime acerca del día número ",
+				"userDefined": false
+			},
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			},
+			{
+				"text": " de las protestas",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "cuéntame acerca del día ",
+				"userDefined": false
+			},
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			},
+			{
+				"text": " de las protestas",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "cuéntame acerca del día número ",
+				"userDefined": false
+			},
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			},
+			{
+				"text": " de las protestas",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "háblame acerca del día ",
+				"userDefined": false
+			},
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			},
+			{
+				"text": " de las protestas",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "háblame acerca del día número ",
+				"userDefined": false
+			},
+			{
+				"text": "day",
+				"userDefined": true,
+				"alias": "day",
+				"meta": "@sys.number-sequence"
+			},
+			{
+				"text": " de las protestas",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "dayOrdinal",
+				"userDefined": true,
+				"alias": "dayOrdinal",
+				"meta": "@LIST_OF_ORDINALS"
+			},
+			{
+				"text": " día",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "quiero saber del ",
+				"userDefined": false
+			},
+			{
+				"text": "dayOrdinal",
+				"userDefined": true,
+				"alias": "dayOrdinal",
+				"meta": "@LIST_OF_ORDINALS"
+			},
+			{
+				"text": " día",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "dime acerca del ",
+				"userDefined": false
+			},
+			{
+				"text": "dayOrdinal",
+				"userDefined": true,
+				"alias": "dayOrdinal",
+				"meta": "@LIST_OF_ORDINALS"
+			},
+			{
+				"text": " día",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "cuéntame acerca del ",
+				"userDefined": false
+			},
+			{
+				"text": "dayOrdinal",
+				"userDefined": true,
+				"alias": "dayOrdinal",
+				"meta": "@LIST_OF_ORDINALS"
+			},
+			{
+				"text": " día",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "háblame acerca del ",
+				"userDefined": false
+			},
+			{
+				"text": "dayOrdinal",
+				"userDefined": true,
+				"alias": "dayOrdinal",
+				"meta": "@LIST_OF_ORDINALS"
+			},
+			{
+				"text": " día",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "dayOrdinal",
+				"userDefined": true,
+				"alias": "dayOrdinal",
+				"meta": "@LIST_OF_ORDINALS"
+			},
+			{
+				"text": " day de las protestas",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "quiero saber del ",
+				"userDefined": false
+			},
+			{
+				"text": "dayOrdinal",
+				"userDefined": true,
+				"alias": "dayOrdinal",
+				"meta": "@LIST_OF_ORDINALS"
+			},
+			{
+				"text": " day de las protestas",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "dime acerca del ",
+				"userDefined": false
+			},
+			{
+				"text": "dayOrdinal",
+				"userDefined": true,
+				"alias": "dayOrdinal",
+				"meta": "@LIST_OF_ORDINALS"
+			},
+			{
+				"text": " day de las protestas",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "cuéntame acerca del ",
+				"userDefined": false
+			},
+			{
+				"text": "dayOrdinal",
+				"userDefined": true,
+				"alias": "dayOrdinal",
+				"meta": "@LIST_OF_ORDINALS"
+			},
+			{
+				"text": " day de las protestas",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "háblame acerca del ",
+				"userDefined": false
+			},
+			{
+				"text": "dayOrdinal",
+				"userDefined": true,
+				"alias": "dayOrdinal",
+				"meta": "@LIST_OF_ORDINALS"
+			},
+			{
+				"text": " day de las protestas",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	}
+]
