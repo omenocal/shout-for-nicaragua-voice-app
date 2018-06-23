@@ -44,24 +44,24 @@ shout for nicaragua
 ### Languages
 For now, Shout for Nicaragua is spoken in English and Spanish, looking to add more languages!
 
-### Locales
+### Locales (links will take you to the app in the store)
 
 # Alexa Skill
-- en-US
-- en-GB
-- en-CA
-- en-AU
-- en-IN
+- [en-US](https://www.amazon.com/dp/B07DTQYB5V/)
+- [en-GB](https://www.amazon.co.uk/dp/B07DTQYB5V/)
+- [en-CA](https://www.amazon.ca/dp/B07DTQYB5V/)
+- [en-AU](https://www.amazon.com.au/dp/B07DTQYB5V/)
+- [en-IN](https://www.amazon.in/dp/B07DTQYB5V/)
 - es-ES
 
 # Google Assistant
-- en-US
-- en-GB
-- en-CA
-- en-AU
-- en-IN
-- es-ES
-- es-419
+- [en-US](https://assistant.google.com/services/a/uid/0000001feb5fbc9f?hl=en)
+- [en-GB](https://assistant.google.com/services/a/uid/0000001feb5fbc9f?hl=en)
+- [en-CA](https://assistant.google.com/services/a/uid/0000001feb5fbc9f?hl=en)
+- [en-AU](https://assistant.google.com/services/a/uid/0000001feb5fbc9f?hl=en)
+- [en-IN](https://assistant.google.com/services/a/uid/0000001feb5fbc9f?hl=en)
+- [es-ES](https://assistant.google.com/services/a/uid/0000001feb5fbc9f?hl=es)
+- [es-419](https://assistant.google.com/services/a/uid/0000001feb5fbc9f?hl=es)
 
 ### Jovo CLI
 The Jovo Command Line Interface ([jovo-cli](https://github.com/jovotech/jovo-cli)) offers the ability to create, prototype, test, and deploy your voice app quickly. To push any update, you will need this command:
