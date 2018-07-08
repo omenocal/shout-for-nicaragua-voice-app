@@ -187,7 +187,7 @@ const handler = {
         connectingWord = this.t('ConnectingWord');
       }
 
-      facts = `${_.join(_.initial(item.facts), ', <break time="0.5s"/> ')}, ${connectingWord} ${lastItem}`;
+      facts = `${_.join(_.initial(item.facts), ' <break time="0.5s"/> ')}, ${connectingWord} ${lastItem}`;
     }
 
     registerGoogleAnalytics.call(this).event('Main flow', 'Most listened day', day + 1);

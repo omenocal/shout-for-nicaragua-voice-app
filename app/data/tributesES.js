@@ -154,7 +154,7 @@ const data = [
     gender: 'M',
   },
   {
-    name: 'Erick Andres Cubillo Solis',
+    name: 'Erick Andres Cubillo Solís',
     age: 36,
     date: '2018-04-21',
     category: 'hombre',
