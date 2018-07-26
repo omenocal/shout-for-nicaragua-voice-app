@@ -2,6 +2,295 @@
   "interactionModel": {
     "languageModel": {
       "invocationName": "grito por nicaragua",
+      "types": [
+        {
+          "name": "LIST_OF_ORDINALS",
+          "values": [
+            {
+              "name": {
+                "value": "1",
+                "synonyms": [
+                  "primer",
+                  "primero"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "2",
+                "synonyms": [
+                  "segundo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "3",
+                "synonyms": [
+                  "tercer",
+                  "tercero"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "4",
+                "synonyms": [
+                  "cuarto"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "5",
+                "synonyms": [
+                  "quinto"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "6",
+                "synonyms": [
+                  "sexto"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "7",
+                "synonyms": [
+                  "séptimo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "8",
+                "synonyms": [
+                  "octavo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "9",
+                "synonyms": [
+                  "noveno"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "10",
+                "synonyms": [
+                  "décimo uno",
+                  "décimo primer",
+                  "décimo primero",
+                  "undécimo",
+                  "onceavo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "11",
+                "synonyms": [
+                  "décimo uno",
+                  "décimo primer",
+                  "décimo primero",
+                  "undécimo",
+                  "onceavo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "12",
+                "synonyms": [
+                  "décimo dos",
+                  "décimo segundo",
+                  "duodécimo",
+                  "doceavo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "13",
+                "synonyms": [
+                  "décimo tres",
+                  "décimo tercer",
+                  "décimo tercero",
+                  "treceavo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "14",
+                "synonyms": [
+                  "décimo cuatro",
+                  "décimo cuarto",
+                  "catorceavo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "15",
+                "synonyms": [
+                  "décimo cinco",
+                  "décimo quinto",
+                  "quinceavo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "16",
+                "synonyms": [
+                  "décimo seis",
+                  "décimo sexto",
+                  "dieciseisavo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "17",
+                "synonyms": [
+                  "décimo siete",
+                  "décimo séptimo",
+                  "diecisieteavo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "18",
+                "synonyms": [
+                  "décimo ocho",
+                  "décimo octavo",
+                  "dieciochoavo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "19",
+                "synonyms": [
+                  "décimo nueve",
+                  "décimo noveno",
+                  "decimonono",
+                  "diecinueveavo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "20",
+                "synonyms": [
+                  "vigésimo",
+                  "veinteavo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "21",
+                "synonyms": [
+                  "vigésimo uno",
+                  "vigésimo primer",
+                  "vigésimo primero"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "22",
+                "synonyms": [
+                  "vigésimo dos",
+                  "vigésimo segundo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "23",
+                "synonyms": [
+                  "vigésimo tres",
+                  "vigésimo tercer",
+                  "vigésimo tercero"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "24",
+                "synonyms": [
+                  "vigésimo cuatro",
+                  "vigésimo cuarto"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "25",
+                "synonyms": [
+                  "vigésimo cinco",
+                  "vigésimo quinto"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "26",
+                "synonyms": [
+                  "vigésimo seis",
+                  "vigésimo sexto"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "27",
+                "synonyms": [
+                  "vigésimo siete",
+                  "vigésimo séptimo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "28",
+                "synonyms": [
+                  "vigésimo ocho",
+                  "vigésimo octavo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "29",
+                "synonyms": [
+                  "vigésimo nueve",
+                  "vigésimo noveno"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "30",
+                "synonyms": [
+                  "treintavo",
+                  "trigésimo"
+                ]
+              }
+            }
+          ]
+        }
+      ],
       "intents": [
         {
           "name": "LaunchIntent",
@@ -30,16 +319,6 @@
         },
         {
           "name": "DateIntent",
-          "slots": [
-            {
-              "name": "day",
-              "type": "AMAZON.NUMBER"
-            },
-            {
-              "name": "dayOrdinal",
-              "type": "LIST_OF_ORDINALS"
-            }
-          ],
           "samples": [
             "{day}",
             "día {day}",
@@ -63,15 +342,26 @@
             "háblame acerca del día {day} de las protestas",
             "háblame acerca del día número {day} de las protestas",
             "{dayOrdinal} día",
+            "día {dayOrdinal}",
             "quiero saber del {dayOrdinal} día",
             "dime acerca del {dayOrdinal} día",
             "cuéntame acerca del {dayOrdinal} día",
             "háblame acerca del {dayOrdinal} día",
-            "{dayOrdinal} day de las protestas",
-            "quiero saber del {dayOrdinal} day de las protestas",
-            "dime acerca del {dayOrdinal} day de las protestas",
-            "cuéntame acerca del {dayOrdinal} day de las protestas",
-            "háblame acerca del {dayOrdinal} day de las protestas"
+            "{dayOrdinal} día de las protestas",
+            "quiero saber del {dayOrdinal} día de las protestas",
+            "dime acerca del {dayOrdinal} día de las protestas",
+            "cuéntame acerca del {dayOrdinal} día de las protestas",
+            "háblame acerca del {dayOrdinal} día de las protestas"
+          ],
+          "slots": [
+            {
+              "name": "day",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "dayOrdinal",
+              "type": "LIST_OF_ORDINALS"
+            }
           ]
         },
         {
@@ -110,6 +400,7 @@
             "ir al principio",
             "juega esto desde el principio",
             "jugar desde el principio",
+            "lo siento espera comienza de nuevo",
             "no empezar de nuevo",
             "oh no empezar de nuevo",
             "podrías comenzar de nuevo ahora",
@@ -122,7 +413,7 @@
             "por favor comienza de nuevo ahora",
             "por favor comienza de nuevo",
             "por favor reinicie",
-            "por favor vuelve a empezar",
+            "por favor vuelve a empezar por favor",
             "puedes comenzar de nuevo ahora",
             "puedes comenzar de nuevo por favor",
             "puedes comenzar de nuevo",
@@ -141,7 +432,6 @@
             "reiniciarlo",
             "sí reiniciar",
             "volver al comienzo",
-            "vuelve a empezar por favor",
             "vuelve y comienza de nuevo"
           ]
         },
@@ -265,8 +555,6 @@
             "fuera",
             "fin",
             "me aburrí",
-            "detente",
-            "cancela",
             "ya no mas",
             "para",
             "eso es todo",
@@ -367,164 +655,11 @@
         },
         {
           "name": "AMAZON.CancelIntent",
-          "samples": []
-        }
-      ],
-      "types": [
-        {
-          "values": [
-            {
-              "name": {
-                "value": "1st"
-              }
-            },
-            {
-              "name": {
-                "value": "2nd"
-              }
-            },
-            {
-              "name": {
-                "value": "3rd"
-              }
-            },
-            {
-              "name": {
-                "value": "4th"
-              }
-            },
-            {
-              "name": {
-                "value": "5th"
-              }
-            },
-            {
-              "name": {
-                "value": "6th"
-              }
-            },
-            {
-              "name": {
-                "value": "7th"
-              }
-            },
-            {
-              "name": {
-                "value": "8th"
-              }
-            },
-            {
-              "name": {
-                "value": "9th"
-              }
-            },
-            {
-              "name": {
-                "value": "10th"
-              }
-            },
-            {
-              "name": {
-                "value": "11th"
-              }
-            },
-            {
-              "name": {
-                "value": "12th"
-              }
-            },
-            {
-              "name": {
-                "value": "13th"
-              }
-            },
-            {
-              "name": {
-                "value": "14th"
-              }
-            },
-            {
-              "name": {
-                "value": "15th"
-              }
-            },
-            {
-              "name": {
-                "value": "16th"
-              }
-            },
-            {
-              "name": {
-                "value": "17th"
-              }
-            },
-            {
-              "name": {
-                "value": "18th"
-              }
-            },
-            {
-              "name": {
-                "value": "19th"
-              }
-            },
-            {
-              "name": {
-                "value": "20th"
-              }
-            },
-            {
-              "name": {
-                "value": "21st"
-              }
-            },
-            {
-              "name": {
-                "value": "22nd"
-              }
-            },
-            {
-              "name": {
-                "value": "23rd"
-              }
-            },
-            {
-              "name": {
-                "value": "24th"
-              }
-            },
-            {
-              "name": {
-                "value": "25th"
-              }
-            },
-            {
-              "name": {
-                "value": "26th"
-              }
-            },
-            {
-              "name": {
-                "value": "27th"
-              }
-            },
-            {
-              "name": {
-                "value": "28th"
-              }
-            },
-            {
-              "name": {
-                "value": "29th"
-              }
-            },
-            {
-              "name": {
-                "value": "30th"
-              }
-            }
-          ],
-          "name": "LIST_OF_ORDINALS"
+          "samples": [
+            "detente",
+            "cancela",
+            "stop"
+          ]
         }
       ]
     }

@@ -101,15 +101,16 @@
 				"háblame acerca del día {day} de las protestas",
 				"háblame acerca del día número {day} de las protestas",
 				"{dayOrdinal} día",
+        "día {dayOrdinal}",
 				"quiero saber del {dayOrdinal} día",
 				"dime acerca del {dayOrdinal} día",
 				"cuéntame acerca del {dayOrdinal} día",
 				"háblame acerca del {dayOrdinal} día",
-				"{dayOrdinal} day de las protestas",
-				"quiero saber del {dayOrdinal} day de las protestas",
-				"dime acerca del {dayOrdinal} day de las protestas",
-				"cuéntame acerca del {dayOrdinal} day de las protestas",
-				"háblame acerca del {dayOrdinal} day de las protestas"
+				"{dayOrdinal} día de las protestas",
+				"quiero saber del {dayOrdinal} día de las protestas",
+				"dime acerca del {dayOrdinal} día de las protestas",
+				"cuéntame acerca del {dayOrdinal} día de las protestas",
+				"háblame acerca del {dayOrdinal} día de las protestas"
 			],
 			"inputs": [
 				{
@@ -167,7 +168,7 @@
 				"ir al principio",
 				"juega esto desde el principio",
 				"jugar desde el principio",
-				"lo siento, espera, comienza de nuevo",
+				"lo siento espera comienza de nuevo",
 				"no empezar de nuevo",
 				"oh no empezar de nuevo",
 				"podrías comenzar de nuevo ahora",
@@ -180,7 +181,7 @@
 				"por favor comienza de nuevo ahora",
 				"por favor comienza de nuevo",
 				"por favor reinicie",
-				"por favor, vuelve a empezar por favor",
+				"por favor vuelve a empezar por favor",
 				"puedes comenzar de nuevo ahora",
 				"puedes comenzar de nuevo por favor",
 				"puedes comenzar de nuevo",
@@ -337,8 +338,6 @@
 				"fuera",
 				"fin",
 				"me aburrí",
-				"detente",
-				"cancela",
 				"ya no mas",
 				"para",
 				"eso es todo",
@@ -462,94 +461,222 @@
 			"name": "LIST_OF_ORDINALS",
 			"values": [
 				{
-					"value": "1st"
+					"value": "1",
+          "synonyms": [
+            "primer",
+            "primero"
+          ]
 				},
 				{
-					"value": "2nd"
+					"value": "2",
+          "synonyms": [
+            "segundo"
+          ]
 				},
 				{
-					"value": "3rd"
+					"value": "3",
+          "synonyms": [
+            "tercer",
+            "tercero"
+          ]
 				},
 				{
-					"value": "4th"
+					"value": "4",
+          "synonyms": [
+            "cuarto"
+          ]
 				},
 				{
-					"value": "5th"
+					"value": "5",
+          "synonyms": [
+            "quinto"
+          ]
 				},
 				{
-					"value": "6th"
+					"value": "6",
+          "synonyms": [
+            "sexto"
+          ]
 				},
 				{
-					"value": "7th"
+					"value": "7",
+          "synonyms": [
+            "séptimo"
+          ]
 				},
 				{
-					"value": "8th"
+					"value": "8",
+          "synonyms": [
+            "octavo"
+          ]
 				},
 				{
-					"value": "9th"
+					"value": "9",
+          "synonyms": [
+            "noveno"
+          ]
 				},
 				{
-					"value": "10th"
+					"value": "10",
+          "synonyms": [
+            "décimo"
+          ]
 				},
 				{
-					"value": "11th"
+					"value": "11",
+          "synonyms": [
+            "décimo uno",
+            "décimo primer",
+            "décimo primero",
+            "undécimo",
+            "onceavo"
+          ]
 				},
 				{
-					"value": "12th"
+					"value": "12",
+          "synonyms": [
+            "décimo dos",
+            "décimo segundo",
+            "duodécimo",
+            "doceavo"
+          ]
 				},
 				{
-					"value": "13th"
+					"value": "13",
+          "synonyms": [
+            "décimo tres",
+            "décimo tercer",
+            "décimo tercero",
+            "treceavo"
+          ]
 				},
 				{
-					"value": "14th"
+					"value": "14",
+          "synonyms": [
+            "décimo cuatro",
+            "décimo cuarto",
+            "catorceavo"
+          ]
 				},
 				{
-					"value": "15th"
+					"value": "15",
+          "synonyms": [
+            "décimo cinco",
+            "décimo quinto",
+            "quinceavo"
+          ]
 				},
 				{
-					"value": "16th"
+					"value": "16",
+          "synonyms": [
+            "décimo seis",
+            "décimo sexto",
+            "dieciseisavo"
+          ]
 				},
 				{
-					"value": "17th"
+					"value": "17",
+          "synonyms": [
+            "décimo siete",
+            "décimo séptimo",
+            "diecisieteavo"
+          ]
 				},
 				{
-					"value": "18th"
+					"value": "18",
+          "synonyms": [
+            "décimo ocho",
+            "décimo octavo",
+            "dieciochoavo"
+          ]
 				},
 				{
-					"value": "19th"
+					"value": "19",
+          "synonyms": [
+            "décimo nueve",
+            "décimo noveno",
+            "decimonono",
+            "diecinueveavo"
+          ]
 				},
 				{
-					"value": "20th"
+					"value": "20",
+          "synonyms": [
+            "vigésimo",
+            "veinteavo"
+          ]
 				},
 				{
-					"value": "21st"
+					"value": "21",
+          "synonyms": [
+            "vigésimo uno",
+            "vigésimo primer",
+            "vigésimo primero"
+          ]
 				},
 				{
-					"value": "22nd"
+					"value": "22",
+          "synonyms": [
+            "vigésimo dos",
+            "vigésimo segundo"
+          ]
 				},
 				{
-					"value": "23rd"
+					"value": "23",
+          "synonyms": [
+            "vigésimo tres",
+            "vigésimo tercer",
+            "vigésimo tercero"
+          ]
 				},
 				{
-					"value": "24th"
+					"value": "24",
+          "synonyms": [
+            "vigésimo cuatro",
+            "vigésimo cuarto"
+          ]
 				},
 				{
-					"value": "25th"
+					"value": "25",
+          "synonyms": [
+            "vigésimo cinco",
+            "vigésimo quinto"
+          ]
 				},
 				{
-					"value": "26th"
+					"value": "26",
+          "synonyms": [
+            "vigésimo seis",
+            "vigésimo sexto"
+          ]
 				},
 				{
-					"value": "27th"
+					"value": "27",
+          "synonyms": [
+            "vigésimo siete",
+            "vigésimo séptimo"
+          ]
 				},
 				{
-					"value": "28th"
+					"value": "28",
+          "synonyms": [
+            "vigésimo ocho",
+            "vigésimo octavo"
+          ]
 				},
 				{
-					"value": "29th"
+					"value": "29",
+          "synonyms": [
+            "vigésimo nueve",
+            "vigésimo noveno"
+          ]
 				},
 				{
-					"value": "30th"
+					"value": "30",
+          "synonyms": [
+            "treintavo",
+            "trigésimo"
+          ]
 				}
 			]
 		}
@@ -560,7 +687,11 @@
 				"intents": [
 					{
 						"name": "AMAZON.CancelIntent",
-						"samples": []
+						"samples": [
+              "detente",
+              "cancela",
+              "stop"
+            ]
 					}
 				]
 			}
