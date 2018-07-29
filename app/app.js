@@ -36,4 +36,16 @@ const jovoConfig = {
 const app = new App(jovoConfig);
 app.setHandler(handler);
 
+app.on('response', (jovo) => {
+  if (jovo.googleAnalytics) {
+    jovo.googleAnalytics.send((err, count) => {
+      if (err) {
+        console.log('ERROR SENDING ANALYTICS', err);
+      }
+
+      console.log('ANALYTICS COUNT', count);
+    });
+  }
+});
+
 module.exports.app = app;
