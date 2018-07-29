@@ -273,6 +273,7 @@ function getFactsForCard(facts) {
   let text = `- ${facts.join('\n- ')}`;
 
   const ALIAS_MAPPING = {
+    '<sub alias="A N P D H">ANPDH</sub>': 'ANPDH',
     '<sub alias="cenid">CENIDH</sub>': 'CENIDH',
     '<sub alias="cosep">COSEP</sub>': 'COSEP',
     '<sub alias="cu un">CUUN</sub>': 'CUUN',
@@ -281,6 +282,7 @@ function getFactsForCard(facts) {
     '<sub alias="u nen">UNEN</sub>': 'UNEN',
     '<sub alias="uca">UCA</sub>': 'UCA',
     '<sub alias="upoli">UPOLI</sub>': 'UPOLI',
+    '<sub alias="I A C H R">IACHR</sub>': 'IACHR',
   };
 
   _.forEach(ALIAS_MAPPING, (value, key) => {
