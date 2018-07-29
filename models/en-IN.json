@@ -1,5 +1,17 @@
 {
   "invocation": "shout nicaragua",
+  "alexa": {
+    "interactionModel": {
+      "languageModel": {
+        "intents": [
+          {
+            "name": "AMAZON.FallbackIntent",
+            "samples": []
+          }
+        ]
+      }
+    }
+  },
   "dialogflow": {
     "intents": [
       {

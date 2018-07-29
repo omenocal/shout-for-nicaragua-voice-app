@@ -60,6 +60,25 @@ const handler = {
         .ask(this.getSessionAttribute('speechOutput'), this.getSessionAttribute('repromptSpeech'));
     }
   },
+  CAN_FULFILL_INTENT() {
+    console.log(this.getHandlerPath());
+
+    if (this.getIntentName() === 'dayRequest') {
+      const day = this.getInput('day');
+      const dayOrdinal = this.getInput('dayOrdinal');
+
+      const canUnderstandSlot = 'YES';
+      const canFulfillSlot = 'YES';
+
+      if (day) {
+        this.canFulfillSlot('day', canUnderstandSlot, canFulfillSlot);
+      } else if (dayOrdinal) {
+        this.canFulfillSlot('dayOrdinal', canUnderstandSlot, canFulfillSlot);
+      }
+    }
+
+    this.canFulfillRequest();
+  },
   ReasonIntent() {
     registerGoogleAnalytics.call(this).event('Main flow', 'ReasonIntent');
 
