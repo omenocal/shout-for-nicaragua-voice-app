@@ -53,6 +53,7 @@ For now, Shout for Nicaragua is spoken in English and Spanish, looking to add mo
 - [en-AU](https://www.amazon.com.au/dp/B07DTQYB5V/)
 - [en-IN](https://www.amazon.in/dp/B07DTQYB5V/)
 - es-ES
+- es-MX
 
 # Google Assistant
 - [en-US](https://assistant.google.com/services/a/uid/0000001feb5fbc9f?hl=en)
@@ -82,3 +83,24 @@ This will start the server and watch for changes. You will see your webhook URL 
 Use this file to create/update your API Gateway configuration. This will allow you to connect your code stored in a Lambda function to the Google Assistant app.
 
 If you need a full example of a Swagger file, follow this [link](https://github.com/aws-samples/api-gateway-secure-pet-store/blob/master/src/main/resources/swagger.yaml)
+
+### IAM settings
+
+The API Gateway requires the IAM role to add it as a trusted relationship. For that you can modify the Trust Policy like this:
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": [
+          "apigateway.amazonaws.com",
+          "lambda.amazonaws.com"
+        ]
+      },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}

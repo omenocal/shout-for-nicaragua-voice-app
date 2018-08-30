@@ -112,9 +112,7 @@
         "{day}",
         "día {dayOrdinal}",
         "qué sucedió el día {day}",
-        "qué sucedió el día {day} de las protestas",
-        "qué sucedió el {dayOrdinal} día",
-        "qué sucedió el {dayOrdinal} día de las protestas"
+        "qué sucedió el {dayOrdinal} día"
 			],
 			"inputs": [
 				{
@@ -689,18 +687,18 @@
 		"interactionModel": {
 			"languageModel": {
 				"intents": [
-          {
-            "name": "AMAZON.CancelIntent",
-            "samples": [
+					{
+						"name": "AMAZON.CancelIntent",
+						"samples": [
               "detente",
               "cancela",
               "stop"
             ]
-          },
-					{
-						"name": "AMAZON.NavigateHomeIntent",
-						"samples": []
-					}
+					},
+          {
+            "name": "AMAZON.NavigateHomeIntent",
+            "samples": []
+          }
 				]
 			}
 		}

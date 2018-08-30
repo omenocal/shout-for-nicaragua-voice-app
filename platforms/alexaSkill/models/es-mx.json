@@ -348,10 +348,10 @@
 						"{dayOrdinal} día",
 						"{day}",
 						"día {dayOrdinal}",
-            "qué sucedió el día {day}",
+						"qué sucedió el día {day}",
             "qué sucedió el día {day} de las protestas",
-            "qué sucedió el {dayOrdinal} día",
-						"qué sucedió el {dayOrdinal} día de las protestas"
+						"qué sucedió el {dayOrdinal} día",
+            "qué sucedió el {dayOrdinal} día de las protestas"
 					],
 					"slots": [
 						{

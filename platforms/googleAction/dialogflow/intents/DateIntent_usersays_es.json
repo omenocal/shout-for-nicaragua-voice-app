@@ -476,7 +476,7 @@
 				"meta": "@LIST_OF_ORDINALS"
 			},
 			{
-				"text": " day de las protestas",
+				"text": " día de las protestas",
 				"userDefined": false
 			}
 		],
@@ -496,7 +496,7 @@
 				"meta": "@LIST_OF_ORDINALS"
 			},
 			{
-				"text": " day de las protestas",
+				"text": " día de las protestas",
 				"userDefined": false
 			}
 		],
@@ -516,7 +516,7 @@
 				"meta": "@LIST_OF_ORDINALS"
 			},
 			{
-				"text": " day de las protestas",
+				"text": " día de las protestas",
 				"userDefined": false
 			}
 		],
@@ -536,29 +536,105 @@
 				"meta": "@LIST_OF_ORDINALS"
 			},
 			{
-				"text": " day de las protestas",
+				"text": " día de las protestas",
 				"userDefined": false
 			}
 		],
 		"isTemplate": false,
 		"count": 0
 	},
+  {
+    "data": [
+      {
+        "text": "háblame acerca del ",
+        "userDefined": false
+      },
+      {
+        "text": "dayOrdinal",
+        "userDefined": true,
+        "alias": "dayOrdinal",
+        "meta": "@LIST_OF_ORDINALS"
+      },
+      {
+        "text": " día de las protestas",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "data": [
+      {
+        "text": "qué sucedió el ",
+        "userDefined": false
+      },
+      {
+        "text": "dayOrdinal",
+        "userDefined": true,
+        "alias": "dayOrdinal",
+        "meta": "@LIST_OF_ORDINALS"
+      },
+      {
+        "text": " día",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "data": [
+      {
+        "text": "qué sucedió el día ",
+        "userDefined": false
+      },
+      {
+        "text": "day",
+        "userDefined": true,
+        "alias": "day",
+        "meta": "@sys.number-sequence"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "data": [
+      {
+        "text": "qué sucedió el ",
+        "userDefined": false
+      },
+      {
+        "text": "dayOrdinal",
+        "userDefined": true,
+        "alias": "dayOrdinal",
+        "meta": "@LIST_OF_ORDINALS"
+      },
+      {
+        "text": " día de las protestas",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
 	{
 		"data": [
 			{
-				"text": "háblame acerca del ",
+				"text": "qué sucedió el día ",
 				"userDefined": false
 			},
-			{
-				"text": "dayOrdinal",
-				"userDefined": true,
-				"alias": "dayOrdinal",
-				"meta": "@LIST_OF_ORDINALS"
-			},
-			{
-				"text": " day de las protestas",
-				"userDefined": false
-			}
+      {
+        "text": "day",
+        "userDefined": true,
+        "alias": "day",
+        "meta": "@sys.number-sequence"
+      },
+      {
+        "text": " de las protestas",
+        "userDefined": false
+      }
 		],
 		"isTemplate": false,
 		"count": 0

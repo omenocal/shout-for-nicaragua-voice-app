@@ -147,7 +147,43 @@
           "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/3fa3/819c52aeb3704a2bba8d7b8ba3913afe/APP_ICON_LARGE?versionId=700KUODDZ3UAqxJw..IS471jy3doNW3i&AWSAccessKeyId=AKIAIEYXX6DHY7O4XWMA&Expires=1532914385&Signature=iXpexfJH5rDE6iglR2%2FxIFMqs64%3D"
         },
         "es-ES": {
-          "summary": "Ahora puede pedirle a Alexa que le cuente día a día los hechos que están sucediendo en Nicaragua sobre las protestas contra el gobierno.",
+          "summary": "Ahora puedes pedirle a Alexa que te cuente día a día los hechos que están sucediendo en Nicaragua sobre las protestas contra el gobierno.",
+          "examplePhrases": [
+            "Alexa, empieza Grito por Nicaragua.",
+            "Dime acerca del día 1.",
+            "¿Por qué está pasando esto?"
+          ],
+          "keywords": [
+            "protesta",
+            "nicaragua",
+            "revolución",
+            "protestas",
+            "genocidio",
+            "lesiones",
+            "secuestro",
+            "gobierno",
+            "justicia",
+            "paz",
+            "central",
+            "américa",
+            "socialismo",
+            "capitalismo",
+            "rezar",
+            "libertad",
+            "libertad",
+            "hecho",
+            "día",
+            "noticias",
+            "último",
+            "tendencias"
+          ],
+          "name": "Grito por Nicaragua",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/ddce/4500582656e84c1bbfcdc4cea0ed2bd2/APP_ICON?versionId=5vz1HdSXS2UIFK4pUVjKws9XQowIuhaS&AWSAccessKeyId=AKIAIEYXX6DHY7O4XWMA&Expires=1532914385&Signature=yIr%2BEWQAwW0GadPDd5zdbjJI%2F7E%3D",
+          "description": "El 16 de abril de 2018, manifestantes marcharon en la capital de Managua para protestar contra lo que consideraban una respuesta insuficiente del gobierno a los incendios forestales que quemaron 13,500 acres (5.500 hectáreas) de la Reserva Biológica Indio Maíz, una reserva natural tropical que es hogar de Ramas y los indígenas Kriol, así como especies importantes de biodiversidad y en peligro de extinción. Las contra-protestas apoyaron al gobierno del Frente Sandinista.\n\nEl miércoles 18 de abril, las protestas en la capital se expandieron en respuesta al anuncio del gobierno de Ortega-Murillo de reformas de la seguridad social que aumentaron los impuestos a la nómina y los ingresos al tiempo que reducían las pensiones en un 5%. Las manifestaciones también surgieron en seis ciudades más, y se encontraron con una fuerte respuesta de las autoridades tras el despliegue del ejército nicaragüense para responder a los manifestantes ordenados por el presidente Ortega. Al menos 26 personas murieron, incluido el periodista Ángel Gahona, del programa de noticias Meridiano, y Gahona fue asesinado a tiros fuera del ayuntamiento de Bluefields mientras transmitía en vivo en Facebook. También surgieron informes que varios medios independientes fueron censurados durante las protestas.\n\nAsí es como todo comenzó. Si quieres saber día a día acerca de esta insurrección, ¡pregúntale a Alexa!\n\nSi deseas ver información más detallada con audio y videos, visita\nhttps://sosnicaraguareporte.com/",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/3fa3/819c52aeb3704a2bba8d7b8ba3913afe/APP_ICON_LARGE?versionId=700KUODDZ3UAqxJw..IS471jy3doNW3i&AWSAccessKeyId=AKIAIEYXX6DHY7O4XWMA&Expires=1532914385&Signature=iXpexfJH5rDE6iglR2%2FxIFMqs64%3D"
+        },
+        "es-MX": {
+          "summary": "Ahora puedes pedirle a Alexa que te cuente día a día los hechos que están sucediendo en Nicaragua sobre las protestas contra el gobierno.",
           "examplePhrases": [
             "Alexa, empieza Grito por Nicaragua.",
             "Dime acerca del día 1.",
@@ -220,7 +256,7 @@
         }
       },
       "isAvailableWorldwide": true,
-      "testingInstructions": "Resubmitted 2018-07-28\nAdded AMAZON.FallbackIntent to en-GB, en-IN, en-AU, en-CA\nAdded CanFulfillIntentRequest interface to en-US\n\n/*****************************************************************************************************************************/Resubmitted 2018-07-26\nFixed example phrases and interaction model for Spanish\n\n/*****************************************************************************************************************************/\nResubmitted 2018-07-23\nWaiting for a response on the Spanish model submission after 1+ month\n\n/*****************************************************************************************************************************/\nResubmitted 2018-06-19\nUpdated english long description for all English locales\nAdded Spanish model\n\n/*****************************************************************************************************************************/\nResubmitted 2018-06-17\nRemoved bitly URL from long description on all locales\n\n/*****************************************************************************************************************************/\nResubmitted 2018-06-15\nUpdated bitly URL\n\n/*****************************************************************************************************************************/\nResubmitted 2018-06-14\nFixed issues from AMZ feedback\n\n/*****************************************************************************************************************************/\nNo special instructions, no data collected",
+      "testingInstructions": "Resubmitted 2018-08-29\nModified Spanish (Spain) interaction model\nAdded es-MX\n\n/*********************************************************************************************************************************************/\nResubmitted 2018-07-28\nAdded AMAZON.FallbackIntent to en-GB, en-IN, en-AU, en-CA\nAdded CanFulfillIntentRequest interface to en-US\n\n/*********************************************************************************************************************************************/\nResubmitted 2018-07-26\nFixed example phrases and interaction model for Spanish\n\n/*********************************************************************************************************************************************/\nResubmitted 2018-07-23\nWaiting for a response on the Spanish model submission after 1+ month\n\n/*********************************************************************************************************************************************/\nResubmitted 2018-06-19\nUpdated english long description for all English locales\nAdded Spanish model\n\n/*********************************************************************************************************************************************/\nResubmitted 2018-06-17\nRemoved bitly URL from long description on all locales\n\n/*********************************************************************************************************************************************/\nResubmitted 2018-06-15\nUpdated bitly URL\n\n/*********************************************************************************************************************************************/\nResubmitted 2018-06-14\nFixed issues from AMZ feedback\n\n/*********************************************************************************************************************************************/\nNo special instructions, no data collected",
       "category": "COMMUNICATION",
       "distributionCountries": []
     },
