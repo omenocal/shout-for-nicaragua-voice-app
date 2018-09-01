@@ -14,7 +14,7 @@ module.exports = {
           '<break time="0.5s"/> Me puedes preguntar acerca de lo que acontecido en un día específico en esta revolución ' +
           'nicaragüense, desde el día 1 hasta el día {{total}}. <break time="0.5s"/> Puedes decir por ejemplo: qué sucedió ' +
           'el día 1. O, dime acerca del día 10. <break time="0.5s"/> Y te diré los sucesos que acontecieron ese día. ' +
-          '<break time="0.5s"/> Si quieres saber acerca de esta revolución, solo dime: por qué esta pasando esto. ' +
+          '<break time="0.5s"/> Si quieres saber acerca de esta revolución, solo dime: por qué está pasando esto. ' +
           '<break time="0.5s"/> Entonces, dime, ¿acerca de qué día te gustaría saber?',
         reprompt: '¿Acerca de qué día te gustaría saber?',
       },
@@ -65,7 +65,7 @@ module.exports = {
       Help: {
         ask: 'Puedo explicarte día a día lo que está sucediendo en la revolución Nicaragüense contra Daniel Ortega. ' +
           'Sólo tienes que preguntarme acerca de un día específico en este histórico movimiento, y puedo decirte los sucesos ' +
-          'de ese día. También puedes decir: por qué esta pasando esto, y puedo explicarte las causas de esta insurrección. ' +
+          'de ese día. También puedes decir: por qué está pasando esto, y puedo explicarte las causas de esta insurrección. ' +
           'Entonces, dime, acerca de qué día te gustaría saber?',
         reprompt: '¿Acerca de qué día te gustaría saber?',
       },
