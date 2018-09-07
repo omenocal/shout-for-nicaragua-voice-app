@@ -110,7 +110,7 @@ const data = [
     age: 23,
     date: '2018-04-21',
     category: 'jóven',
-    city: 'Leon',
+    city: 'León',
     gender: 'M',
   },
   {
@@ -238,7 +238,7 @@ const data = [
     age: 24,
     date: '2018-04-19',
     category: '',
-    city: 'Sebaco',
+    city: 'Sébaco',
     gender: 'M',
   },
   {
