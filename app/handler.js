@@ -255,7 +255,10 @@ const handler = {
       .ask(this.getSessionAttribute('speechOutput'), this.getSessionAttribute('repromptSpeech'));
   },
   async StopIntent() {
-    await storage.put(this.getSessionAttribute('user'));
+    let user = this.getSessionAttribute('user');
+    user = user || await storage.get(this.getUserId());
+
+    await storage.put(user);
 
     registerGoogleAnalytics.call(this).event('Main flow', 'StopIntent');
     endSession.call(this);
@@ -263,7 +266,10 @@ const handler = {
     this.tell(this.t('Exit'));
   },
   async END() {
-    await storage.put(this.getSessionAttribute('user'));
+    let user = this.getSessionAttribute('user');
+    user = user || await storage.get(this.getUserId());
+
+    await storage.put(user);
 
     registerGoogleAnalytics.call(this).event('Main flow', 'SessionEnded');
     endSession.call(this);
