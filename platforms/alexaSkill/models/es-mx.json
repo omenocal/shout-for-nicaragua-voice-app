@@ -7,6 +7,7 @@
 					"name": "LIST_OF_ORDINALS",
 					"values": [
 						{
+							"id": null,
 							"name": {
 								"value": "1",
 								"synonyms": [
@@ -16,6 +17,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "2",
 								"synonyms": [
@@ -24,6 +26,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "3",
 								"synonyms": [
@@ -33,6 +36,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "4",
 								"synonyms": [
@@ -41,6 +45,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "5",
 								"synonyms": [
@@ -49,6 +54,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "6",
 								"synonyms": [
@@ -57,6 +63,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "7",
 								"synonyms": [
@@ -65,6 +72,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "8",
 								"synonyms": [
@@ -73,6 +81,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "9",
 								"synonyms": [
@@ -81,6 +90,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "10",
 								"synonyms": [
@@ -89,6 +99,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "11",
 								"synonyms": [
@@ -101,6 +112,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "12",
 								"synonyms": [
@@ -112,6 +124,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "13",
 								"synonyms": [
@@ -123,6 +136,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "14",
 								"synonyms": [
@@ -133,6 +147,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "15",
 								"synonyms": [
@@ -143,6 +158,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "16",
 								"synonyms": [
@@ -153,6 +169,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "17",
 								"synonyms": [
@@ -163,6 +180,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "18",
 								"synonyms": [
@@ -173,6 +191,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "19",
 								"synonyms": [
@@ -184,6 +203,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "20",
 								"synonyms": [
@@ -193,6 +213,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "21",
 								"synonyms": [
@@ -203,6 +224,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "22",
 								"synonyms": [
@@ -212,6 +234,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "23",
 								"synonyms": [
@@ -222,6 +245,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "24",
 								"synonyms": [
@@ -231,6 +255,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "25",
 								"synonyms": [
@@ -240,6 +265,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "26",
 								"synonyms": [
@@ -249,6 +275,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "27",
 								"synonyms": [
@@ -258,6 +285,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "28",
 								"synonyms": [
@@ -267,6 +295,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "29",
 								"synonyms": [
@@ -276,6 +305,7 @@
 							}
 						},
 						{
+							"id": null,
 							"name": {
 								"value": "30",
 								"synonyms": [
@@ -349,9 +379,7 @@
 						"{day}",
 						"día {dayOrdinal}",
 						"qué sucedió el día {day}",
-            "qué sucedió el día {day} de las protestas",
-						"qué sucedió el {dayOrdinal} día",
-            "qué sucedió el {dayOrdinal} día de las protestas"
+						"qué sucedió el {dayOrdinal} día"
 					],
 					"slots": [
 						{

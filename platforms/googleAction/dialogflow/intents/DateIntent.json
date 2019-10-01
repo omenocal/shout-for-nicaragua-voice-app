@@ -15,7 +15,7 @@
 					"isList": false,
 					"name": "dayOrdinal",
 					"value": "$dayOrdinal",
-					"dataType": "@LIST_OF_ORDINALS"
+					"dataType": "@sys.ordinal"
 				}
 			]
 		}

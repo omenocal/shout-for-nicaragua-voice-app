@@ -19,26 +19,26 @@
 		"isTemplate": false,
 		"count": 0
 	},
-  {
-    "data": [
-      {
-        "text": "give me a fact",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0
-  },
-  {
-    "data": [
-      {
-        "text": "tell me a fact",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0
-  },
+	{
+		"data": [
+			{
+				"text": "give me a fact",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "tell me a fact",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
 	{
 		"data": [
 			{

@@ -233,7 +233,7 @@
 				"text": "dayOrdinal",
 				"userDefined": true,
 				"alias": "dayOrdinal",
-				"meta": "@LIST_OF_ORDINALS"
+				"meta": "@sys.ordinal"
 			},
 			{
 				"text": " day",
@@ -253,7 +253,7 @@
 				"text": "dayOrdinal",
 				"userDefined": true,
 				"alias": "dayOrdinal",
-				"meta": "@LIST_OF_ORDINALS"
+				"meta": "@sys.ordinal"
 			},
 			{
 				"text": " day",
@@ -273,7 +273,7 @@
 				"text": "dayOrdinal",
 				"userDefined": true,
 				"alias": "dayOrdinal",
-				"meta": "@LIST_OF_ORDINALS"
+				"meta": "@sys.ordinal"
 			},
 			{
 				"text": " day",
@@ -289,7 +289,7 @@
 				"text": "dayOrdinal",
 				"userDefined": true,
 				"alias": "dayOrdinal",
-				"meta": "@LIST_OF_ORDINALS"
+				"meta": "@sys.ordinal"
 			},
 			{
 				"text": " day of the protests",
@@ -309,7 +309,7 @@
 				"text": "dayOrdinal",
 				"userDefined": true,
 				"alias": "dayOrdinal",
-				"meta": "@LIST_OF_ORDINALS"
+				"meta": "@sys.ordinal"
 			},
 			{
 				"text": " day of the protests",
@@ -329,7 +329,7 @@
 				"text": "dayOrdinal",
 				"userDefined": true,
 				"alias": "dayOrdinal",
-				"meta": "@LIST_OF_ORDINALS"
+				"meta": "@sys.ordinal"
 			},
 			{
 				"text": " day of the protests",

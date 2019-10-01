@@ -332,7 +332,7 @@
 	{
 		"data": [
 			{
-				"text": "lo siento, espera, comienza de nuevo",
+				"text": "lo siento espera comienza de nuevo",
 				"userDefined": false
 			}
 		],
@@ -462,7 +462,7 @@
 	{
 		"data": [
 			{
-				"text": "por favor, vuelve a empezar por favor",
+				"text": "por favor vuelve a empezar por favor",
 				"userDefined": false
 			}
 		],

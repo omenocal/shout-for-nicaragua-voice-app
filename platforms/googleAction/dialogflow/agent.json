@@ -26,7 +26,7 @@
 			"required": false,
 			"grantType": "AUTH_CODE_GRANT"
 		},
-		"voiceType": "MALE_1",
+		"voiceType": "FEMALE_1",
 		"capabilities": [],
 		"protocolVersion": "V2",
 		"autoPreviewEnabled": false,
@@ -34,11 +34,14 @@
 	},
 	"defaultTimezone": "America/Chicago",
 	"webhook": {
-		"url": "https://bdiu5yy51f.execute-api.us-east-1.amazonaws.com/prod/v1/shoutForNicaragua",
-    "headers": {
-      "x-api-key": "eqYnwYvc622JE2bkXJMhL2rmkWXOG1BG6QQI6E5i"
-    },
-		"available": true
+		"url": "undefined",
+		"headers": {
+			"x-api-key": "eqYnwYvc622JE2bkXJMhL2rmkWXOG1BG6QQI6E5i"
+		},
+		"available": true,
+		"useForDomains": false,
+		"cloudFunctionsEnabled": false,
+		"cloudFunctionsInitialized": false
 	},
 	"isPrivate": true,
 	"customClassifierMode": "use.after",
@@ -46,5 +49,8 @@
 	"supportedLanguages": [
 		"es"
 	],
-	"onePlatformApiVersion": "v2"
+	"onePlatformApiVersion": "v2",
+	"analyzeQueryTextSentiment": false,
+	"enabledKnowledgeBaseNames": [],
+	"knowledgeServiceConfidenceAdjustment": -0.4
 }

@@ -12,16 +12,6 @@
 	{
 		"data": [
 			{
-				"text": "cancel",
-				"userDefined": false
-			}
-		],
-		"isTemplate": false,
-		"count": 0
-	},
-	{
-		"data": [
-			{
 				"text": "complete",
 				"userDefined": false
 			}
