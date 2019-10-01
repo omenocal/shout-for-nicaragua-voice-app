@@ -131,6 +131,10 @@ const handler = {
       .ask(this.getSessionAttribute('speechOutput'), this.getSessionAttribute('repromptSpeech'));
   },
   dayRequest() {
+    if (this.isNewSession()) {
+      return this.toIntent('LAUNCH');
+    }
+
     const { isPrevious } = this.$data;
     moment.locale(this.getLocale().toLowerCase());
 
