@@ -4,15 +4,12 @@ const _ = require('lodash');
 const moment = require('moment-timezone');
 const universalAnalytics = require('universal-analytics');
 
-const config = require('./config');
-const UserStorage = require('./userStorage');
-
-const storage = new UserStorage();
-
-const BASE_URL = 'https://s3.amazonaws.com/shoutfornicaragua';
-
 const handler = {
-  async LAUNCH() {
+  ON_HEALTH_CHECK() {
+    return this.tell(this.t('HealthCheck'));
+  },
+
+  LAUNCH() {
     moment.locale(this.getLocale().toLowerCase());
 
     registerGoogleAnalytics.call(this).event('Main flow', 'Session Start', { sc: 'start' });
@@ -31,34 +28,27 @@ const handler = {
       tribute.genderTwo = this.t('GenderMaleTwo');
     }
 
-    let user = await storage.get(this.getUserId());
-    user = user || { userId: this.getUserId() };
-
-    if (user.index !== undefined) {
-      tribute.day = user.index + 1;
+    if (this.$user.$data.index !== undefined) {
+      tribute.day = this.$user.$data.index + 1;
 
       if (this.isGoogleAction()) {
-        this
-          .googleAction()
-          .showSuggestionChips(this.t('SuggestionChips'));
+        this.$googleAction.showSuggestionChips(this.t('SuggestionChips'));
       }
 
-      this
-        .setSessionAttribute('user', user)
+      return this
         .setSessionAttribute('startTime', +new Date())
         .setSessionAttribute('speechOutput', this.t('ReturningUser.ask', tribute))
         .setSessionAttribute('repromptSpeech', this.t('ReturningUser.reprompt'))
         .ask(this.getSessionAttribute('speechOutput'), this.getSessionAttribute('repromptSpeech'));
-    } else {
-      user.index = 0;
-
-      this
-        .setSessionAttribute('user', user)
-        .setSessionAttribute('startTime', +new Date())
-        .setSessionAttribute('speechOutput', this.t('Launch.ask', tribute))
-        .setSessionAttribute('repromptSpeech', this.t('Launch.reprompt'))
-        .ask(this.getSessionAttribute('speechOutput'), this.getSessionAttribute('repromptSpeech'));
     }
+
+    this.$user.$data.index = 0;
+
+    return this
+      .setSessionAttribute('startTime', +new Date())
+      .setSessionAttribute('speechOutput', this.t('Launch.ask', tribute))
+      .setSessionAttribute('repromptSpeech', this.t('Launch.reprompt'))
+      .ask(this.getSessionAttribute('speechOutput'), this.getSessionAttribute('repromptSpeech'));
   },
   CAN_FULFILL_INTENT() {
     console.log(this.getHandlerPath());
@@ -77,43 +67,50 @@ const handler = {
       }
     }
 
-    this.canFulfillRequest();
+    return this.canFulfillRequest();
   },
   ReasonIntent() {
     registerGoogleAnalytics.call(this).event('Main flow', 'ReasonIntent');
 
-    this
+    return this
       .setSessionAttribute('speechOutput', this.t('Reason.ask'))
       .setSessionAttribute('repromptSpeech', this.t('Reason.reprompt'))
       .ask(this.getSessionAttribute('speechOutput'), this.getSessionAttribute('repromptSpeech'));
   },
   NextIntent() {
     registerGoogleAnalytics.call(this).event('Main flow', 'NextIntent');
-    this.toIntent('dayRequest');
+
+    return this.toIntent('dayRequest');
   },
   PreviousIntent() {
     registerGoogleAnalytics.call(this).event('Main flow', 'PreviousIntent');
-    this.toIntent('dayRequest', true);
+
+    this.$data.isPrevious = true;
+
+    return this.toIntent('dayRequest');
   },
   RepeatIntent() {
     if (this.getSessionAttribute('speechOutput')) {
       registerGoogleAnalytics.call(this).event('Main flow', 'RepeatIntent');
-      this.ask(this.getSessionAttribute('speechOutput'), this.getSessionAttribute('repromptSpeech'));
-    } else {
-      registerGoogleAnalytics.call(this).event('Main flow', 'RepeatIntent at LaunchRequest');
-      this.toIntent('LAUNCH');
+
+      return this.ask(this.getSessionAttribute('speechOutput'), this.getSessionAttribute('repromptSpeech'));
     }
+
+    registerGoogleAnalytics.call(this).event('Main flow', 'RepeatIntent at LaunchRequest');
+
+    return this.toIntent('LAUNCH');
   },
   StartOverIntent() {
     registerGoogleAnalytics.call(this).event('Main flow', 'StartOverIntent');
-    this
-      .setSessionAttribute('user.index', undefined)
-      .toIntent('dayRequest');
+
+    delete this.$user.$data.index;
+
+    return this.toIntent('dayRequest');
   },
   HelpIntent() {
     registerGoogleAnalytics.call(this).event('Main flow', 'HelpIntent');
 
-    this
+    return this
       .setSessionAttribute('speechOutput', this.t('Help.ask'))
       .setSessionAttribute('repromptSpeech', this.t('Help.reprompt'))
       .ask(this.getSessionAttribute('speechOutput'), this.getSessionAttribute('repromptSpeech'));
@@ -124,16 +121,17 @@ const handler = {
     if (this.isAlexaSkill()) {
       registerGoogleAnalytics.call(this).event('Main flow', intentName);
     } else {
-      const query = (this.request().getRawText() || '').toLowerCase();
+      const query = (this.$googleAction.getRawText() || '').toLowerCase();
       registerGoogleAnalytics.call(this).event('Main flow', intentName, query);
     }
 
-    this
+    return this
       .setSessionAttribute('speechOutput', this.t('Unhandled.ask'))
       .setSessionAttribute('repromptSpeech', this.t('Unhandled.reprompt'))
       .ask(this.getSessionAttribute('speechOutput'), this.getSessionAttribute('repromptSpeech'));
   },
-  dayRequest(isPrevious) {
+  dayRequest() {
+    const { isPrevious } = this.$data;
     moment.locale(this.getLocale().toLowerCase());
 
     registerGoogleAnalytics.call(this).event('Main flow', this.getIntentName());
@@ -159,15 +157,14 @@ const handler = {
     if (day && !data[day - 1]) {
       registerGoogleAnalytics.call(this).event('Main flow', 'Most requested invalid day', day);
 
-      this
+      return this
         .setSessionAttribute('speechOutput', this.t('NoData.ask', { day, total: _.size(data) }))
         .setSessionAttribute('repromptSpeech', this.t('NoData.reprompt'))
         .ask(this.getSessionAttribute('speechOutput'), this.getSessionAttribute('repromptSpeech'));
-      return;
     }
 
     if (!day) {
-      day = this.getSessionAttribute('user.index');
+      day = this.$user.$data.index;
 
       if (day === undefined) {
         day = -1;
@@ -221,24 +218,21 @@ const handler = {
     console.log('item', item);
 
     if (this.isAlexaSkill()) {
-      this
-        .alexaSkill()
+      this.$alexaSkill
         .showStandardCard(item.title, factsForCard, {
-          smallImageUrl: `${BASE_URL}/nicaraguaFlag_720x480.jpg`,
-          largeImageUrl: `${BASE_URL}/nicaraguaFlag_1200x800.jpg`,
+          smallImageUrl: `${this.$app.$config.s3.baseUrl}/nicaraguaFlag_720x480.jpg`,
+          largeImageUrl: `${this.$app.$config.s3.baseUrl}/nicaraguaFlag_1200x800.jpg`,
         });
     } else {
-      this
-        .googleAction()
-        .showImageCard(item.title, `**${factsForCard}**`, `${BASE_URL}/nicaraguaFlag_720x480.jpg`)
+      this.$googleAction
+        .showImageCard(item.title, `**${factsForCard}**`, `${this.$app.$config.s3.baseUrl}/nicaraguaFlag_720x480.jpg`)
         .showSuggestionChips(this.t('SuggestionChips'));
     }
 
-    this.setSessionAttribute('user.index', day);
+    this.$user.$data.index = day;
 
     if (data === _.size(data) - 1) {
-      this.tell(this.t('LastFact.tell', valuesInSpeech));
-      return;
+      return this.tell(this.t('LastFact.tell', valuesInSpeech));
     }
 
     let label;
@@ -249,36 +243,26 @@ const handler = {
       label = 'Fact';
     }
 
-    this
+    return this
       .setSessionAttribute('speechOutput', this.t(`${label}.ask`, valuesInSpeech))
       .setSessionAttribute('repromptSpeech', this.t(`${label}.reprompt`))
       .ask(this.getSessionAttribute('speechOutput'), this.getSessionAttribute('repromptSpeech'));
   },
-  async StopIntent() {
-    let user = this.getSessionAttribute('user');
-    user = user || await storage.get(this.getUserId());
-
-    await storage.put(user);
-
+  StopIntent() {
     registerGoogleAnalytics.call(this).event('Main flow', 'StopIntent');
     endSession.call(this);
 
-    this.tell(this.t('Exit'));
+    return this.tell(this.t('Exit'));
   },
-  async END() {
-    let user = this.getSessionAttribute('user');
-    user = user || await storage.get(this.getUserId());
-
-    await storage.put(user);
-
+  END() {
     registerGoogleAnalytics.call(this).event('Main flow', 'SessionEnded');
     endSession.call(this);
 
     if (this.isGoogleAction()) {
-      this.tell(this.t('Exit'));
-    } else {
-      this.respond();
+      return this.tell(this.t('Exit'));
     }
+
+    return this;
   },
 };
 
@@ -320,7 +304,7 @@ function getFactsForCard(facts) {
 function registerGoogleAnalytics() {
   if (!this.googleAnalytics) {
     const userID = this.getUserId();
-    const trackingCode = config.googleAnalytics.trackingCode;
+    const { trackingCode } = this.$app.$config.googleAnalytics;
 
     this.googleAnalytics = universalAnalytics(trackingCode, userID, { strictCidFormat: false });
   }

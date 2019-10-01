@@ -1,13 +1,16 @@
 db/
 dist
 dist.zip
-/.ask
+platforms/alexaSkill/.ask
 aws-config.js
 swagger.yaml
 key-file.json
 app/config/config.json
+platforms/alexaSkill/.ask/config
+platforms/alexaSkill/hooks/
 platforms/googleAction/dialogflow/Archive.zip
 platforms/googleAction/dialogflow_agent.zip
+.ask/
 #### OSX
 *.DS_Store
 .AppleDouble
@@ -88,7 +91,6 @@ jspm_packages
 .node_repl_history
 
 #### Project
-/src
 /www/public
 /config/local.json
 .serverless
